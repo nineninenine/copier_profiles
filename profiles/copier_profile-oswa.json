@@ -1,0 +1,100 @@
+{
+  "version" : "2",
+  "globalProfile" : {
+    "updateRequestContentLength" : false,
+    "updateResponseContentLength" : false,
+    "requestRules" : {
+      "data" : [ ]
+    },
+    "responseRules" : {
+      "data" : [ ]
+    }
+  },
+  "profiles" : [ {
+    "name" : "Default",
+    "updateRequestContentLength" : false,
+    "updateResponseContentLength" : false,
+    "requestRules" : {
+      "data" : [ ]
+    },
+    "responseRules" : {
+      "data" : [ ]
+    },
+    "skipGlobalRules" : false
+  }, {
+    "name" : "OSWA",
+    "updateRequestContentLength" : false,
+    "updateResponseContentLength" : false,
+    "requestRules" : {
+      "data" : [ {
+        "enabled" : true,
+        "location" : 6,
+        "match" : "^Priority: .*",
+        "replace" : "",
+        "regex" : true,
+        "caseSensitive" : false,
+        "comment" : ""
+      }, {
+        "enabled" : true,
+        "location" : 6,
+        "match" : "^Connection:.*",
+        "replace" : "",
+        "regex" : true,
+        "caseSensitive" : false,
+        "comment" : ""
+      }, {
+        "enabled" : true,
+        "location" : 6,
+        "match" : "Accept:.*",
+        "replace" : "",
+        "regex" : true,
+        "caseSensitive" : false,
+        "comment" : ""
+      } ]
+    },
+    "responseRules" : {
+      "data" : [ {
+        "enabled" : true,
+        "location" : 3,
+        "match" : "^Connection:.*",
+        "replace" : "",
+        "regex" : true,
+        "caseSensitive" : false,
+        "comment" : ""
+      }, {
+        "enabled" : true,
+        "location" : 3,
+        "match" : "^Vary:.*",
+        "replace" : "",
+        "regex" : true,
+        "caseSensitive" : false,
+        "comment" : ""
+      }, {
+        "enabled" : true,
+        "location" : 3,
+        "match" : "^Pragma:.*",
+        "replace" : "",
+        "regex" : true,
+        "caseSensitive" : false,
+        "comment" : ""
+      }, {
+        "enabled" : true,
+        "location" : 3,
+        "match" : "^Keep-Alive:.*",
+        "replace" : "",
+        "regex" : true,
+        "caseSensitive" : false,
+        "comment" : ""
+      }, {
+        "enabled" : true,
+        "location" : 3,
+        "match" : "^Cache-Control:.*",
+        "replace" : "",
+        "regex" : true,
+        "caseSensitive" : false,
+        "comment" : ""
+      } ]
+    },
+    "skipGlobalRules" : false
+  } ]
+}
