@@ -93,6 +93,14 @@
         "regex" : true,
         "caseSensitive" : false,
         "comment" : ""
+      }, {
+        "enabled" : true,
+        "location" : 3,
+        "match" : "Expires: .*",
+        "replace" : "",
+        "regex" : true,
+        "caseSensitive" : false,
+        "comment" : ""
       } ]
     },
     "skipGlobalRules" : false
