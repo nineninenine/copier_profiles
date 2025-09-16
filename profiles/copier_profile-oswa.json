@@ -45,7 +45,23 @@
       }, {
         "enabled" : true,
         "location" : 6,
-        "match" : "Accept:.*",
+        "match" : "^Accept:.*",
+        "replace" : "",
+        "regex" : true,
+        "caseSensitive" : false,
+        "comment" : ""
+      }, {
+        "enabled" : true,
+        "location" : 6,
+        "match" : "^Upgrade-Insecure-Requests: .*",
+        "replace" : "",
+        "regex" : true,
+        "caseSensitive" : false,
+        "comment" : ""
+      }, {
+        "enabled" : true,
+        "location" : 6,
+        "match" : "^Accept-Language:.*",
         "replace" : "",
         "regex" : true,
         "caseSensitive" : false,
@@ -96,7 +112,7 @@
       }, {
         "enabled" : true,
         "location" : 3,
-        "match" : "Expires: .*",
+        "match" : "^Expires: .*",
         "replace" : "",
         "regex" : true,
         "caseSensitive" : false,
